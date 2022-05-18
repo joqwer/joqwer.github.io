@@ -1,0 +1,12 @@
+* {
+    font-family: sans-serif; 
+}
+
+#title {
+    text-align: center;
+}
+
+#subtitle {
+    text-align: center;
+    color: grey;
+}
