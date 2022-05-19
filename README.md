@@ -5,5 +5,5 @@
 This website is kind of pointless... I just dump some projects and information on it lol.
 
 ## TODO
-- Make Landing Page
+✓ Make Landing Page
 - Add more tools
