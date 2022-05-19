@@ -1,0 +1,13 @@
+* {
+    font-family: sans-serif;
+    overflow-wrap: break-word;
+}
+
+#title {
+    text-align: center;
+}
+
+#subtitle {
+    text-align: center;
+    color: grey;
+}
