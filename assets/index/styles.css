@@ -6,8 +6,8 @@
 }
 
 .carousel {
-    max-width: 350px;
-    max-height: 150px;
+    max-width: 800px;
+    max-height: 470px;
     align-self: center;
 }
 
@@ -17,4 +17,8 @@
 
 img {
     width: 100%;
+}
+
+#socialJumbotron {
+    margin-bottom: 0;
 }
