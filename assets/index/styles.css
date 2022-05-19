@@ -6,7 +6,6 @@
 }
 
 .carousel {
-    /* any dimensions are fine, it can be responsive with max-width */
     max-width: 350px;
     max-height: 150px;
     align-self: center;
