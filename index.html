@@ -1,108 +1,76 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Website</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- CSS -->
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/index/styles.css">
-    <link rel="stylesheet" href="assets/Font Awesome/css/all.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  </head>
-  <body>
-      <!-- Navbar -->
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-        <div class="nav navbar-nav">
-            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#"></a>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Tools
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="/DUC">DUC (Data URL Converter)</a>
-                  <a class="dropdown-item" href="/jokes">Joke Generator</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.7/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="dist/output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="dark:bg-gray-800">
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800">
+        <div class="container flex flex-wrap justify-between items-center mx-auto">
+          <a href="https://flowbite.com/" class="flex items-center">
+              <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">joqwer</span>
+          </a>
+          <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+            <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+            <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+              <li>
+                <a href="#" class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white" aria-current="page">Home</a>
               </li>
+              <li>
+                <a href="#about" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              </li>
+              <li>
+                <a href="#contact" class="block py-2 pr-4 pl-3 text-gray-700 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-
-    <!-- Jumbotron -->
-    <div class="jumbotron bg-dark text-white jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3">Hello there!</h1>
-            <p class="lead" style=>I am joqwer. I am learning Python, HTML, CSS and JavaScript</p>
-            <hr class="my-2">
-            <p class="lead">
-                <a class="btn btn-success btn-lg" href="https://github.com/joqwer" role="button">Visit Github</a>
-            </p>
+      </nav>
+        <div class="h-screen flex flex-col justify-center">
+          <h1 class="mt-auto bg-gradient-to-r from-pink-500 via-red-400 to-purple-500 text-transparent bg-clip-text break-normal text-center font-extrabold text-6xl background-animate overflow-hidden">Hello, I am joqwer</h1>
+          <p class="mb-auto break-normal text-3xl text-gray-500 dark:text-gray-200 text-center">I am a beginner programer who is interested in web development using languages like HTML, CSS and JavaScript</p>
         </div>
-    </div>
-
-    <!-- My Stuff -->
-
-    <h1 id="myStuff">My Stuff</h1>
-
-    <div id="myStuffCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myStuffCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myStuffCarousel" data-slide-to="1"></li>
-            <li data-target="#myStuffCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img src="https://via.placeholder.com/800x470.png?text=Slide+1" alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x470.png?text=Slide+2" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img src="https://via.placeholder.com/800x470.png?text=Slide+3" alt="Third slide">
-            </div>
+        <div id="about">
+          <h1 class="text-4xl text-center dark:text-white font-bold">About me:</h1>
+          <p class="text-xl text-center dark:text-white">tk</p>
         </div>
-        <a class="carousel-control-prev" href="#myStuffCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#myStuffCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-
-    <!-- Contact Jumbotron -->
-
-    <br>
-
-    <div class="jumbotron jumbotron-fluid bg-dark text-white" id="socialJumbotron">
-        <div class="container">
-            <h1 class="display-3">Contact</h1>
-            <p class="lead">Here are my socials</p>
-            <hr class="my-2">
-            <a href="https://github.com/joqwer" class="text-light"><i class="fa-brands fa-github fa-2x fa-fw"></i></a><a class="text-light" href="https://codepen.io/joqwer"><i class="fa-brands fa-codepen fa-2x fa-fw"></i></a>
+        <div id="contact">
+          <h1 class="text-4xl text-center dark:text-white font-bold">Contact me:</h1>
+          <p class="text-xl text-center dark:text-white">Below, I have linked various platforms where you MAY be able to contact me</p>
         </div>
-    </div>
 
-    <!-- Footer -->
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
 
-    <footer class="bg-dark text-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          Made by Joqwer
-          <br>
-          Icons from <a href="https://fontawesome.com">Font Awesome</a>.
-        </div>
-        <!-- Copyright -->
-      </footer>
+    .background-animate {
+      background-size: 400%;
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+      -webkit-animation: AnimationName 3s ease infinite;
+      -moz-animation: AnimationName 3s ease infinite;
+      animation: AnimationName 3s ease infinite;
+    }
+
+
+    @keyframes AnimationName {
+      0%,
+      100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+</style>
+</body>
 </html>
